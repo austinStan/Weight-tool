@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>weighttool</title>
+  <meta name="description" content="">
+  <link href="./style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body>
+  <div class="center y" id="mydiv">
+
+    <h2 class="posn">Weight Conversion Tool</h2>
+    <p>
+      <h4 class="text-default">Enter your Weight and select Measurement Unit</h4>
+
+      <input class="txt" id="weight" type="number" placeholder="Enter your weight" style="width: 25em;">
+      <select class="k" id="selectedweight">
+        <option value="kilograms" >Kilograms</option>
+        <option value="grams">Grams</option>
+        <option value="ounces">Ounces</option>
+        <option value="stones">Stones</option>
+        <option value="pounds">Pounds</option>
+      </select>
+      <h4 class="text-default">Select a measurement unit to convert to</h4>
+      <select class="k" id="weightselected">
+        <option value="kilograms" id="kg">Kilograms</option>
+        <option value="grams" id="g">Grams</option>
+        <option value="ounces" id="o">Ounces</option>
+        <option value="stones" id="s">Stones</option>
+        <option value="pounds" id="ps">Pounds</option>
+      </select>
+
+      <button id="compute" class="btn-space btn-success">
+        <ion-icon name="git-compare"></ion-icon>compute
+      </button>
+      <button id="clear" class="btn-space btn-info">
+        <ion-icon name="close-circle"></ion-icon>clear
+      </button>
+
+    </p>
+    </form>
+    <label>Your computation is !</label> <input type="text" id="returnvalue" size="30" />
+  </div>
+</body>
+
+</html>
